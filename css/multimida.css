@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+div#tv-radio {
+  width: 480px;
+  height: 480px;
+  margin: auto;
+  background: url("../img/tv40.jpg") no-repeat;
+}
+
+audio#musica {
+  display: block;
+  position: relative;
+  left: 85px;
+  top: 235px;
+  width: 300px;
+}
+
+video#filmes {
+  display: block;
+  position: relative;
+  left: 120px;
+  top: 10px;
+  width: 230px;
+}
+
+
+div#video-cabecalho {
+  display: block;
+  position: relative;
+  left: 75px;
+  top: 40px;
+
+}

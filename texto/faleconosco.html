@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet"  href="../css/style.css">
+<link rel="stylesheet" href="../css/stilo_fotos.css">
+<link rel="stylesheet" href="../css/fontes.css">
+<link rel="stylesheet" href="../css/form.css">
+<script>
+  function calc_total() {
+    var qtd = parseInt(document.getElementById('cQtd').value)
+    tot = qtd * 500;
+    document.getElementById('cTot').value = tot;
+  }
+</script>
+<head>
+  <script>
+    function  mudaFoto (foto) {
+      document.getElementById("fotomenu").src = foto;
+    }
+  </script>
+  <meta charset="UTF-8">
+  <title>Minha Hamburgueria</title>
+</head>
+<body>
+<div id="interface">
+
+  <header id="cabecalho">
+    <hgroup>
+
+      <h1 style="visibility: hidden">  Hamgurgueria do ALLISSON</h1>
+      <h2 style="text-align: center">A revolução do Lanche</h2>
+    </hgroup>
+
+    <figure class="foto-legenda5">
+      <img id="fotomenu" src="../img/fotoparamenu.jpg">
+    </figure>
+
+    <figure class="foto-legenda2">
+      <img id="icone-lanche-cabecalho" src="../img/allisson.jpg"/>
+      <figcaption> &nbsp; &nbsp; &nbsp;&nbsp;Hamburgueria do Allisson</figcaption>
+    </figure>
+
+    <nav id="menu">
+      <h1> Menu Principal </h1>
+      <ul>
+        <li onmouseover="mudaFoto('../img/homepalavra.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../Hamburgueria.html" target="_self">Home</a></li>
+        <li onmouseover="mudaFoto('../img/restaurantMenu.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/menu.html" target="_self">Menu</a></li>
+        <li onmouseover="mudaFoto('../img/fotoscomida.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/fotos-txt.html" target="_self">Fotos</a></li>
+        <li onmouseover="mudaFoto('../img/multimidia.gif')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/multimidia-txt.html" target="_self">Multimidia</a></li>
+        <li onmouseover="mudaFoto('../img/raioxdolanche.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/raio-x-do-lanche.html"  target="_self"> raio  x do lanche</a></li>
+        <li onmouseover="mudaFoto('../img/Faleconosco.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/faleconosco.html" target="_self">Fale Conosco</a></li>>
+      </ul>
+    </nav>
+  </header>
+
+  <form method="post" id="fContato" action="maito:rose.allisson@gmail.com" oninput="calc_total();">
+    <fieldset id="usuario"><legend>Identificação do Usuario</legend>
+      <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="nome completo"/></p>
+      <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="16" placeholder="8 a 16 caracteres"></p>
+      <p><label for="cEmail">email:</label> <input type="email" name="Tmail" id="cEmail" size="30" maxlength="30" placeholder="email"></p>
+      <fieldset id="sexo"><legend>Sexo</legend>
+      <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masculino</label><br/>
+      <input type="radio" name="tSexo" id="cFemin"/><label for="cFemin">Feminino</label><br/>
+      <input type="radio" name="tSexo" id="cNaoInform"><label for="cNaoInform">Prefiro não informar</label>
+      </fieldset>
+      <p><label for="cNasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc"> </p>
+    </fieldset>
+
+    <fieldset id="pedido"><legend>descreva abaixo seu pedido</legend>
+      <p><label for="cQuantid">Quantidade: <input type="number" name="tQuantid" id="cQuantid" size="5" maxlength="30" placeholder="quantidade"></label></p>
+    </fieldset>
+    <fieldset id="endereco">
+      <legend>endereço do usuario</legend>
+      <p><label for="cRua">logradouro:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="rua, avenida, travessa"></p>
+      <p><label for="cNum">Numero:</label><input type="number" name="tNum" id="cNum" min="0" max="9999"> </p>
+      <p><label for="cEstado">estado:</label>
+      <select name="tEst" id="cEstado">
+        <option value="Pr">Parana</option>
+        <option value="SC"> santa catarina</option>
+        <option value="ac">Acre</option>
+        <option value="al">Alagoas</option>
+        <option value="am">Amazonas</option>
+        <option value="ap">Amapá</option>
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceará</option>
+        <option value="df">Distrito Federal</option>
+        <option value="es">Espírito Santo</option>
+        <option value="go">Goiás</option>
+        <option value="ma">Maranhão</option>
+        <option value="mt">Mato Grosso</option>
+        <option value="ms">Mato Grosso do Sul</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="pa">Pará</option>
+        <option value="pb">Paraíba</option>
+        <option value="pr">Paraná</option>
+        <option value="pe">Pernambuco</option>
+        <option value="pi">Piauí</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="rn">Rio Grande do Norte</option>
+        <option value="ro">Rondônia</option>
+        <option value="rs">Rio Grande do Sul</option>
+        <option value="rr">Roraima</option>
+        <option value="sc">Santa Catarina</option>
+        <option value="se">Sergipe</option>
+        <option value="sp">São Paulo</option>
+      </select></p>
+      <p><label for="cCid"> Cidade:</label>
+        <input type="text" name="tCid" id="cCid"maxlength="40" size="20" placeholder="sua cidade" list="cidades"/></p>
+
+      <datalist id="cidades">
+        <option value="Sarandi"></option>
+        <option value="Maringa"></option>
+        <option value="Marialva"></option>
+      </datalist>
+    </fieldset>
+
+    <fieldset id="pedido"><legend> Quero um Hmburguer especial</legend>
+      <p><input type="checkbox" name="tPed" id="cPed" checked/>
+        <label for="cPed"> Gostaria de pedir um lanche Especial</label>
+      <p><label for="cQtd">quantidade:</label></p>
+      <input type="number" name="tQtd" id="cQtd" min="0" max="10" value="0">
+      <p><label for="cTot">total: R$</label></p>
+      <input type="text" name="tTot" id="cTot" placeholder="total a pagar">
+
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+    <input type="image" name="tEnviar" src="../img/botaoenviar2.jpg">
+      [ENVIAR WHATSAPP]
+  </form>
+
+
+  <footer id="rodape">
+    Copyright 2022 - by Allisson Ramos Prof:Gustavo Guanabara <br/>
+    <a href="https://www.facebook.com/rose.allisson.31" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com/planetshop_allisson/" target="_blank">Instagram</a>
+  </footer>
+
+</div>
+</body>
+</html>

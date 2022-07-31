@@ -1,26 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+<link rel="stylesheet"  href="../css/style.css">
+<link rel="stylesheet" href="../css/stilo_fotos.css">
+<link rel="stylesheet" href="../css/fontes.css">
+<link rel="stylesheet" href="../css/raioxdolanche.css">
 <head>
+  <script>
+    function  mudaFoto (foto) {
+      document.getElementById("fotomenu").src = foto;
+    }
+  </script>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Minha Hamburgueria</title>
 </head>
 <body>
-[AQUI ENTRA UMA FOTO]
+<div id="interface">
 
-Menu Principal
-- Home
-- raio x do lanche
-- Fotos
-- Multimídia
-- Fale conosco
+  <header id="cabecalho">
+    <hgroup>
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+      <h1 style="visibility: hidden">  Hamgurgueria do ALLISSON</h1>
+      <h2 style="text-align: center">A revolução do Lanche</h2>
+    </hgroup>
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+    <figure class="foto-legenda5">
+      <img id="fotomenu" src="../img/fotoparamenu.jpg">
+    </figure>
 
-[AQUI ENTRA UMA IMAGEM]
+    <figure class="foto-legenda2">
+      <img id="icone-lanche-cabecalho" src="../img/allisson.jpg"/>
+      <figcaption> &nbsp; &nbsp; &nbsp;&nbsp;Hamburgueria do Allisson</figcaption>
+    </figure>
+
+    <nav id="menu">
+      <h1> Menu Principal </h1>
+      <ul>
+        <li onmouseover="mudaFoto('../img/homepalavra.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../Hamburgueria.html" target="_self">Home</a></li>
+        <li onmouseover="mudaFoto('../img/restaurantMenu.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/menu.html" target="_self">Menu</a></li>
+        <li onmouseover="mudaFoto('../img/fotoscomida.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/fotos-txt.html" target="_self">Fotos</a></li>
+        <li onmouseover="mudaFoto('../img/multimidia.gif')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/multimidia-txt.html" target="_self">Multimidia</a></li>
+        <li onmouseover="mudaFoto('../img/raioxdolanche.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/raio-x-do-lanche.html"  target="_self"> raio  x do lanche</a></li>
+        <li onmouseover="mudaFoto('../img/Faleconosco.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/fale-conosco-txt.html" target="_self">Fale Conosco</a></li>>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="corpo-full">Hamburgue > Especificações
+    <article id="noticia-principal">
+      <header id="cabecalho-artigo">
+        <hgroup>
+          <h2>Gastronomia > inovacoes</h2>
+          <h1>Saiba tudo sobre nossos lanches</h1>
+          <h3>por ALLISSON RAMOS LEANDRO</h3>
+          <h3 class="direita">atualizado 03/07/22 00:15</h3>
+        </hgroup>
+      </header>
+
+      <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass.
+        Qualquer
+        ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+    <section id="conteudo">
+      <img src="../img/partesLanche5.png" usemap="#meumapa">
+      <map name="meumapa">
+            <area shape="rect" coords="23,17,391,152" href="especificacaodolanche.html#pao" target="janela"/>
+            <area shape="rect" coords="31,174,371,425" href="especificacaodolanche.html#salada" target="janela"/>
+            <area  shape="rect" coords="10,444,371,598" href="especificacaodolanche.html#queijo" target="janela"/>
+            <area shape="rect" coords="17,624,391,718" href="especificacaodolanche.html#hamburgue" target="janela"/>
+            <area shape="rect" coords="20,739,371,883" href="especificacaodolanche.html#pao" target="janela">
+
+      </map>
+
+      <iframe src="especificacaodolanche.html" name="janela" id="frame-spec"></iframe>
+
+    </section>
+    </article>
+  </section>
+
+  <footer id="rodape">
+    Copyright 2022 - by Allisson Ramos Prof:Gustavo Guanabara <br/>
+    <a href="https://www.facebook.com/rose.allisson.31" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com/planetshop_allisson/" target="_blank">Instagram</a>
+  </footer>
+
+</div>
 </body>
 </html>

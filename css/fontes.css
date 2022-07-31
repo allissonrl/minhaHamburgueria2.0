@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Bubblegum Sans';
+  src: url('BubblegumSans-Regular.woff2') format('woff2'),
+  url('BubblegumSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Computerfont';
+  src: url('Computerfont.woff2') format('woff2'),
+  url('Computerfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Procreate Signature';
+  src: url('ProcreateSignatureRegular.woff2') format('woff2'),
+  url('ProcreateSignatureRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Creattion Demo';
+  src: url('CreattionDemo.woff2') format('woff2'),
+  url('CreattionDemo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Edu TAS Beginner';
+  src: url('EduTASBeginner-Regular.woff2') format('woff2'),
+  url('EduTASBeginner-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Edu TAS Beginner';
+  src: url('EduTASBeginner-Regular.woff2') format('woff2'),
+  url('EduTASBeginner-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik Moonrocks';
+  src: url('RubikMoonrocks-Regular.woff2') format('woff2'),
+  url('RubikMoonrocks-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

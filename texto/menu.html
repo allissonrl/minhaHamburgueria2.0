@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet"  href="../css/style.css">
+<link rel="stylesheet" href="../css/stilo_fotos.css">
+<link rel="stylesheet" href="../css/fontes.css">
 <head>
+  <script>
+    function  mudaFoto (foto) {
+      document.getElementById("fotomenu").src = foto;
+    }
+  </script>
   <meta charset="UTF-8">
-  <title>Menu</title>
+  <title>Minha Hamburgueria</title>
 </head>
 <body>
-<h1>Menu Principal</h1>
-- Home
-- raio x do lanche
-- Fotos
-- Multimídia
-- Fale conosco
+<div id="interface">
+
+  <header id="cabecalho">
+    <hgroup>
+
+      <h1 style="visibility: hidden">  Hamgurgueria do ALLISSON</h1>
+      <h2 style="text-align: center">A revolução do Lanche</h2>
+    </hgroup>
+
+    <figure class="foto-legenda5">
+      <img id="fotomenu" src="../img/fotoparamenu.jpg">
+    </figure>
+
+    <figure class="foto-legenda2">
+      <img id="icone-lanche-cabecalho" src="../img/allisson.jpg"/>
+      <figcaption> &nbsp; &nbsp; &nbsp;&nbsp;Hamburgueria do Allisson</figcaption>
+    </figure>
+
+    <nav id="menu">
+      <h1> Menu Principal </h1>
+      <ul>
+        <li onmouseover="mudaFoto('../img/homepalavra.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../Hamburgueria.html" target="_self">Home</a></li>
+        <li onmouseover="mudaFoto('../img/restaurantMenu.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/menu.html" target="_self">Menu</a></li>
+        <li onmouseover="mudaFoto('../img/fotoscomida.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/fotos-txt.html" target="_self">Fotos</a></li>
+        <li onmouseover="mudaFoto('../img/multimidia.gif')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/multimidia-txt.html" target="_self">Multimidia</a></li>
+        <li onmouseover="mudaFoto('../img/raioxdolanche.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/raio-x-do-lanche.html"  target="_self"> raio  x do lanche</a></li>
+        <li onmouseover="mudaFoto('../img/Faleconosco.jpg')" onmouseout="mudaFoto('../img/fotoparamenu.jpg')"><a href="../texto/fale-conosco-txt.html" target="_self">Fale Conosco</a></li>>
+      </ul>
+    </nav>
+  </header>
 
 Hambúrguer à parmegiana
 Apenas carne, molho e queijo, sem pão ou com pão oferecido ao lado do prato.
@@ -23,5 +54,12 @@ Proteínas diferentes
 Nem só de carne bovina vivem as hamburguerias.
 E o nicho gourmet permite testar hambúrgueres de atum, palmito, grão de bico — e o que mais a sua criatividade permitir.
 
+  <footer id="rodape">
+    Copyright 2022 - by Allisson Ramos Prof:Gustavo Guanabara <br/>
+    <a href="https://www.facebook.com/rose.allisson.31" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com/planetshop_allisson/" target="_blank">Instagram</a>
+  </footer>
+
+</div>
 </body>
 </html>

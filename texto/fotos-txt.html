@@ -1,29 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+<link rel="stylesheet"  href="../css/style.css">
+<link rel="stylesheet" href="../css/stilo_fotos.css">
+<link rel="stylesheet" href="../css/fontes.css">
+<link rel="stylesheet" href="../css/raioxdolanche.css">
+<link rel="stylesheet" href="../css/album-fotos.css">
 <head>
+  <script>
+    function  mudaFoto (foto) {
+      document.getElementById("fotomenu").src = foto;
+    }
+  </script>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Minha Hamburgueria</title>
 </head>
 <body>
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<div id="interface">
 
-Glass > Fotos
+  <header id="cabecalho">
+    <hgroup>
+
+      <h1 style="visibility: hidden">  Hamgurgueria do ALLISSON</h1>
+      <h2 style="text-align: center">A revolução do Lanche</h2>
+    </hgroup>
+
+    <figure class="foto-legenda5">
+      <img id="fotomenu" src="../img/fotoscomida.jpg">
+    </figure>
+
+    <figure class="foto-legenda2">
+      <img id="icone-lanche-cabecalho" src="../img/allisson.jpg"/>
+      <figcaption> &nbsp; &nbsp; &nbsp;&nbsp;Hamburgueria do Allisson</figcaption>
+    </figure>
+
+    <nav id="menu">
+      <h1> Menu Principal </h1>
+      <ul>
+        <li onmouseover="mudaFoto('../img/homepalavra.jpg')" onmouseout="mudaFoto('../img/fotoscomida.jpg')"><a href="../Hamburgueria.html" target="_self">Home</a></li>
+        <li onmouseover="mudaFoto('../img/restaurantMenu.jpg')" onmouseout="mudaFoto('../img/fotoscomida.jpg')"><a href="../texto/menu.html" target="_self">Menu</a></li>
+        <li onmouseover="mudaFoto('../img/fotoscomida.jpg')" onmouseout="mudaFoto('../img/fotoscomida.jpg')"><a href="../texto/fotos-txt.html" target="_self">Fotos</a></li>
+        <li onmouseover="mudaFoto('../img/multimidia.gif')" onmouseout="mudaFoto('../img/fotoscomida.jpg')"><a href="../texto/multimidia-txt.html" target="_self">Multimidia</a></li>
+        <li onmouseover="mudaFoto('../img/raioxdolanche.jpg')" onmouseout="mudaFoto('../img/fotoscomida.jpg')"><a href="../texto/raio-x-do-lanche.html"  target="_self"> raio  x do lanche</a></li>
+        <li onmouseover="mudaFoto('../img/Faleconosco.jpg')" onmouseout="mudaFoto('../img/fotoscomida.jpg')"><a href="../texto/fale-conosco-txt.html" target="_self">Fale Conosco</a></li>>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="corpo-full">Hamburgue > Especificações
+    <article id="noticia-principal">
+      <header id="cabecalho-artigo">
+        <hgroup>
+          <h2>Lnaches > e Fotos</h2>
+          <h1>Galeria de imagem Lanches</h1>
+          <h3>por ALLISSON RAMOS LEANDRO</h3>
+          <h3 class="direita">atualizado 03/07/22 00:15</h3>
+        </hgroup>
+      </header>
+
+  Glass > Fotos
 Galeria de Imagens da Hamburgueria
 por allisson ramos leandro
 Atualizado em 06/julho/2022
 
-Veja na nossa galeria de fotos várias belas imagens que mostram algumas delicias de nosso cardapio, com uma elegancia de cardapio  que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+      <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas delicias de nosso cardapio, com uma
+        elegancia de cardapio que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para
+        ver uma versão ampliada e com uma breve descrição.</p>
 
-- x Bacon
-- Hot dog pizza
-- x Alcatra
-- X Strogonoff de Frango
-- nosso hamburguer especial
-- Informações importantes
+      <ul id="album-fotos">
+        <li id="foto01"><span>- x Bacon</span></li>
+        <li id="foto02"><span>- Hot dog pizza</span></li>
+        <li id="foto03"><span>- x Alcatra</span></li>
+        <li id="foto04"><span>- X Strogonoff de Frango</span></li>
+        <li id="foto05"><span>- nosso hamburguer especial</span></li>
+        <li id="foto06"><span>- Informações importantes</span></li></ul>
+
+    </article>
+  </section>
+
+  <footer id="rodape">
+    Copyright 2022 - by Allisson Ramos Prof:Gustavo Guanabara <br/>
+    <a href="https://www.facebook.com/rose.allisson.31" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com/planetshop_allisson/" target="_blank">Instagram</a>
+  </footer>
+
+</div>
 </body>
 </html>
+
